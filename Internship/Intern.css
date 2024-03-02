@@ -1,0 +1,483 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 0; 
+  background-image: url("Img-1.webp");
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  height: 100vh;
+  position: relative;
+  z-index: 999; 
+}
+
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent; 
+  z-index: 1000;
+}
+
+nav {
+  position: absolute;
+  top: 20px; 
+  right: 20px; 
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 15px 15px;
+  font-family: 'Times New Roman', Times, serif;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+nav ul li a {
+  text-decoration: none;
+  color: white; 
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  transition: background-color 0.3s ease; 
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); 
+  color: #FFA822;
+}
+
+
+@media screen and (max-width: 768px) {
+  nav {
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+  }
+
+  nav ul {
+      text-align: center; 
+  }
+
+  nav ul li {
+      display: block; 
+      margin-bottom: 10px; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  nav ul {
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0 0 10px 0;
+  }
+}
+
+.logo {
+  margin: 20px 100px;
+  width: 209px;
+}
+
+.content {
+  font-family: Roboto;
+  display: block;
+  justify-content: center;
+  text-align: left;
+  padding-top: 160px;
+  padding-left: 80px;
+  color: white;
+}
+
+.content h1 {
+  padding: 8px;
+  font-size: 44px;
+}
+
+.content p {
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.content span {
+  color: #FFA822;
+}
+
+.content button {
+  padding: 10px 40px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: black;
+  background-color: white;
+}
+
+button {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #FFA822;
+  box-shadow: 0 0 10px rgba(255, 168, 34, 0.5);
+}
+
+.vid {
+  width: 100%;
+  height: 100%;
+}
+
+.video {
+  height: fit-content;
+}
+.about{
+  margin: 0;
+  padding: 0;
+}
+
+.about h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 72px;
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+}
+
+.about span {
+  color: #FFA822;
+}
+
+.about p {
+  font-size: 24px;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.about p:hover{
+  color: #FFA822;
+  transform: translateY(-15px);
+  box-shadow: 0 0 8px rgba(255, 215, 0, 1);
+}
+
+.story .p {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #FFA822;
+  font-size: 44px;
+  background-color: transparent; 
+  box-shadow: none; 
+}
+
+.story h2 {
+  text-align: center;
+  padding-top: 0.2%; 
+  padding-bottom: 15px;
+  font-size: 48px;
+}
+
+.story .span {
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  padding: 15px 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.services{
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+  height: 100vh;
+}
+.services h1{
+  text-align: center;
+  color: white;
+  padding: 25px;
+  font-size: 48px;
+}
+.services span{
+  color: #FFA822;
+}
+.services-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: white;
+}
+.row-1 {
+  text-align: center;
+  padding: 25px 50px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  cursor: pointer; 
+}
+.row-1 h3{
+  font-size: 24px;
+  padding: 10px;
+}
+.row-1 p{
+  font-size: 16px;
+  padding: 10px;
+}
+.row-1:hover {
+  box-shadow: 0 0 8px rgba(255, 215, 0, 1);
+  transform: translateY(-15px); 
+  color: #FFA822;
+}
+.partner{
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+  height: 100vh;
+}
+.partner span{
+  color: #FFA822;
+}
+
+.columns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.columns-1  {
+  text-align: center;
+  padding: 15px 30px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+.columns-1 h3{
+  font-size: 24px;
+  padding: 10px;
+}
+.columns-1 p{
+  font-size: 16px;
+  padding: 10px;
+}
+.columns-1:hover,
+.columns-1:hover h3,
+.columns-1:hover p
+{
+  transform: translateY(-15px);
+  box-shadow: 0 0 8px rgba(255, 215, 0, 1);
+  color: #FFA822; 
+}
+.partner h3{
+  padding: 35px;
+  text-align: center;
+  color: white;
+  font-size: 48px;
+}
+.partner p{
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  padding: 20px;
+}
+.strategies{
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+}
+.strategies h2{
+  color: white;
+  font-size: 48px;
+  padding: 40px;
+  margin: 20px;
+
+}
+.strategies span{
+  color: #FFA822;
+}
+.strategies p{
+  font-size: 36px;
+  color: white;
+  padding-top: 90px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.strategies p:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 0 8px rgba(255, 215, 0, 1);
+    color: #FFA822; 
+}
+.contact{
+  display: flex;
+
+}
+.details{
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  width: 100%;
+  height: 100vh;
+}
+.details-1{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 80px;
+  font-size: 24px;
+}
+.details-1 h2{
+  padding-bottom: 15px;
+}
+.details-1 span{
+  color: #FFA822;
+}
+.details-2{
+  padding: 20px 80px;
+  font-size: 24px;
+}
+.details-2 .p{
+  padding-top: 15px;
+}
+.details-3{
+  padding: 20px 80px;
+  font-size: 24px;
+}
+.details-3 .p{
+  padding-top: 15px;
+}
+.details-4{
+  padding: 20px 80px;
+  font-size: 24px;
+}
+.details-4 .p{
+  padding-top: 15px;
+}
+.contact-details{
+  background-color: rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  padding: 50px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  margin-right: 180px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+}
+.contact-details:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 0 8px rgba(255, 215, 0, 1);
+  color: #FFA822; 
+
+
+}
+.contact-details-1{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+}
+.contact-details h2{
+  font-size: 36px;
+  text-align: center;
+}
+.contact-details span{
+  color: #FFA822;
+}
+.contact-details-1 label, input{
+  margin: 10px;
+  text-align: left;
+}
+.contact-details-1 input{
+  background-color: #002244;
+  border: none;
+  color: white;
+  font-size: 24px;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 5px;
+}
+.contact-details textarea{
+  background-color: #002244;
+  border: none;
+  color: white;
+  font-size: 12px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.contact-details button{
+  display: block;
+  margin: 40px;
+  margin-left: 360px;
+  margin-top: 30px;
+  padding: 10px 40px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+}
+
+
+
+
